@@ -214,4 +214,5 @@ __marimo__/
 
 
 # api
-api-key.txt
+api-key.txt.DS_Store
+.claude/
