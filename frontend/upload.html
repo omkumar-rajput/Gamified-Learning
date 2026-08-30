@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Learning – Upload Content</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .upload-container {
+            max-width: 720px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .upload-header {
+            margin-bottom: 2rem;
+        }
+
+        .upload-header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--heading-color);
+            margin-bottom: 0.4rem;
+        }
+
+        .upload-header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .upload-panel {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .drop-zone {
+            border: 2px dashed var(--border);
+            border-radius: 10px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: border-color 0.2s, background 0.2s;
+            margin-bottom: 1.5rem;
+        }
+
+        .drop-zone:hover, .drop-zone.dragover {
+            border-color: var(--primary);
+            background: var(--accent-bg);
+            color: var(--primary);
+        }
+
+        .drop-zone-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .drop-zone-label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .drop-zone-sub {
+            font-size: 0.8rem;
+            margin-top: 0.25rem;
+            opacity: 0.7;
+        }
+
+        #file-input {
+            display: none;
+        }
+
+        #file-name {
+            font-size: 0.85rem;
+            color: var(--primary);
+            margin-top: 0.5rem;
+            font-weight: 500;
+            min-height: 1.2em;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--label-color);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        textarea.form-control {
+            min-height: 180px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .submit-row {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 1.5rem;
+        }
+
+        .btn-submit {
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.15s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-submit:hover:not(:disabled) {
+            background: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-submit:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .result-box {
+            margin-top: 1.5rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            display: none;
+        }
+
+        .result-box.success {
+            background: #f0fdf4;
+            border: 1px solid var(--success);
+            color: #166534;
+            display: block;
+        }
+
+        .result-box.error {
+            background: #fef2f2;
+            border: 1px solid var(--danger);
+            color: #991b1b;
+            display: block;
+        }
+
+        .spinner {
+            width: 18px;
+            height: 18px;
+            border: 3px solid rgba(255,255,255,0.4);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            display: none;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar" aria-label="Main navigation">
+            <a href="index.html" class="nav-logo" aria-label="Gamified Learning home">⚡Gamified Learning</a>
+            <ul class="nav-links" role="list">
+                <li><a href="index.html" class="nav-link">Dashboard</a></li>
+                <li><a href="quiz.html" class="nav-link">Quiz</a></li>
+                <li><a href="upload.html" class="nav-link active" aria-current="page">Upload</a></li>
+                <li><a href="edit.html" class="nav-link">Manage</a></li>
+                <li><a href="learning-path.html" class="nav-link">Learning Path</a></li>
+                <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+                <li data-role-only="admin"><a href="admin.html" class="nav-link">Admin</a></li>
+            </ul>
+            <div id="user-switcher-slot"></div>
+        </nav>
+    </header>
+
+    <main class="upload-container">
+        <div class="upload-header">
+            <h1>Upload Content</h1>
+            <p>Upload a file or paste text — the AI generates MCQs from it and auto-tags each one with the closest Official Statistical System competency.</p>
+        </div>
+
+        <div class="upload-panel">
+            <!-- File upload -->
+            <div class="drop-zone" id="drop-zone" role="button" tabindex="0" aria-label="Upload file">
+                <div class="drop-zone-icon">📂</div>
+                <div class="drop-zone-label">Drop a file here or <u>click to browse</u></div>
+                <div class="drop-zone-sub">Supports .txt, .pdf, .docx</div>
+                <div id="file-name"></div>
+            </div>
+            <input type="file" id="file-input" accept=".txt,.pdf,.docx">
+
+            <div class="divider">or paste text</div>
+
+            <!-- Text paste -->
+            <div class="form-group">
+                <label for="upload-subject">Subject</label>
+                <input
+                    id="upload-subject"
+                    class="form-control"
+                    list="upload-subject-options"
+                    placeholder="e.g. Database Systems"
+                />
+                <datalist id="upload-subject-options"></datalist>
+            </div>
+
+            <div class="form-group">
+                <label for="upload-chapter">Chapter</label>
+                <input
+                    id="upload-chapter"
+                    class="form-control"
+                    list="upload-chapter-options"
+                    placeholder="e.g. Normalization"
+                />
+                <datalist id="upload-chapter-options"></datalist>
+            </div>
+
+            <div class="form-group">
+                <label for="content-text">Paste your content</label>
+                <textarea
+                    id="content-text"
+                    class="form-control"
+                    placeholder="Paste lecture notes, paragraphs, or any learning material here..."
+                ></textarea>
+            </div>
+
+            <div class="submit-row">
+                <button class="btn-submit" id="submit-btn" onclick="submitContent()">
+                    <div class="spinner" id="spinner"></div>
+                    <span id="btn-label">Generate Flashcards</span>
+                </button>
+            </div>
+
+            <div class="result-box" id="result-box"></div>
+        </div>
+    </main>
+
+    <script src="common.js"></script>
+    <script src="upload.js"></script>
+</body>
+</html>

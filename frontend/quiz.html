@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Learning – Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar" aria-label="Main navigation">
+            <a href="index.html" class="nav-logo" aria-label="Gamified Learning home">⚡Gamified Learning</a>
+            <ul class="nav-links" role="list">
+                <li><a href="index.html" class="nav-link">Dashboard</a></li>
+                <li><a href="quiz.html" class="nav-link active" aria-current="page">Quiz</a></li>
+                <li><a href="upload.html" class="nav-link">Upload</a></li>
+                <li><a href="edit.html" class="nav-link">Manage</a></li>
+                <li><a href="learning-path.html" class="nav-link">Learning Path</a></li>
+                <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+                <li data-role-only="admin"><a href="admin.html" class="nav-link">Admin</a></li>
+            </ul>
+            <div id="user-switcher-slot"></div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="dynamic-content" id="quiz-container" aria-label="Quiz">
+
+            <article class="card" aria-label="Flashcard">
+                <header class="card-header" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <span class="status-badge">Due</span>
+                        <div class="question-meta">
+                            <span class="meta-pill question-subject">Subject</span>
+                            <span class="meta-pill question-chapter">Chapter</span>
+                        </div>
+                        <p class="card-progress" aria-label="Progress" style="margin: 0;">Question 1 of 10</p>
+                    </div>
+                    <button class="btn" style="padding: 0.3rem 0.6rem; font-size: 0.8rem; background: var(--surface-2); border: 1px solid var(--border-color); border-radius: 6px; cursor: pointer;" onclick="editCurrentQuestion()">✏️ Edit</button>
+                </header>
+
+                <section class="question-front" aria-label="Question">
+                    What is the capital of France?
+                </section>
+
+                <div id="mcq-options" class="options-grid" hidden></div>
+
+                <section class="question-back" aria-label="Answer" hidden>
+                    Paris
+                </section>
+
+                <div id="explanation-box" class="explanation-box" hidden></div>
+            </article>
+
+            <button class="btn btn-secondary" id="show-answer-btn" onclick="showAnswer()">Show Answer</button>
+
+            <section class="rating-controls" aria-label="Rate your recall" hidden>
+                <h2 class="rating-label">How well did you remember?</h2>
+                <div class="rating-buttons" role="group" aria-label="FSRS rating buttons">
+                    <button class="rating-btn rating-again" onclick="rateCard(1)" aria-label="Again – complete blackout">
+                        <span class="rating-name">Again</span>
+                    </button>
+                    <button class="rating-btn rating-hard" onclick="rateCard(2)" aria-label="Hard – correct but very difficult">
+                        <span class="rating-name">Hard</span>
+                    </button>
+                    <button class="rating-btn rating-good" onclick="rateCard(3)" aria-label="Good – correct after hesitation">
+                        <span class="rating-name">Good</span>
+                    </button>
+                    <button class="rating-btn rating-easy" onclick="rateCard(4)" aria-label="Easy – perfect response">
+                        <span class="rating-name">Easy</span>
+                    </button>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <script src="common.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

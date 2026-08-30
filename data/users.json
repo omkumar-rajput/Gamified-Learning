@@ -1,0 +1,5 @@
+[
+  { "id": "demo_officer_1", "name": "Priya Sharma (Junior Statistical Officer)", "role": "officer" },
+  { "id": "demo_officer_2", "name": "Arjun Mehta (Senior Statistical Officer)", "role": "officer" },
+  { "id": "admin_1", "name": "Training Manager (Admin View)", "role": "admin" }
+]

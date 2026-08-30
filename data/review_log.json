@@ -1,0 +1,1306 @@
+[
+  {
+    "card_id": 1788036539902,
+    "rating": 3,
+    "review_datetime": "2026-07-05T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 9
+  },
+  {
+    "card_id": 1788036539898,
+    "rating": 4,
+    "review_datetime": "2026-07-06T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 4
+  },
+  {
+    "card_id": 1788036539942,
+    "rating": 4,
+    "review_datetime": "2026-07-06T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 24
+  },
+  {
+    "card_id": 1788036539894,
+    "rating": 3,
+    "review_datetime": "2026-07-07T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 1
+  },
+  {
+    "card_id": 1788036539949,
+    "rating": 3,
+    "review_datetime": "2026-07-07T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 30
+  },
+  {
+    "card_id": 1788036539910,
+    "rating": 2,
+    "review_datetime": "2026-07-08T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 19
+  },
+  {
+    "card_id": 1788036539946,
+    "rating": 3,
+    "review_datetime": "2026-07-08T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 28
+  },
+  {
+    "card_id": 1788036539921,
+    "rating": 3,
+    "review_datetime": "2026-07-09T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 28
+  },
+  {
+    "card_id": 1788036539940,
+    "rating": 2,
+    "review_datetime": "2026-07-09T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 20
+  },
+  {
+    "card_id": 1788036539902,
+    "rating": 2,
+    "review_datetime": "2026-07-10T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 9
+  },
+  {
+    "card_id": 1788036539894,
+    "rating": 2,
+    "review_datetime": "2026-07-11T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 1
+  },
+  {
+    "card_id": 1788036539905,
+    "rating": 1,
+    "review_datetime": "2026-07-11T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 14
+  },
+  {
+    "card_id": 1788036539931,
+    "rating": 2,
+    "review_datetime": "2026-07-11T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 12
+  },
+  {
+    "card_id": 1788036539895,
+    "rating": 3,
+    "review_datetime": "2026-07-12T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 2
+  },
+  {
+    "card_id": 1788036539898,
+    "rating": 3,
+    "review_datetime": "2026-07-12T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 4
+  },
+  {
+    "card_id": 1788036539911,
+    "rating": 2,
+    "review_datetime": "2026-07-12T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 20
+  },
+  {
+    "card_id": 1788036539920,
+    "rating": 2,
+    "review_datetime": "2026-07-12T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 27
+  },
+  {
+    "card_id": 1788036539946,
+    "rating": 2,
+    "review_datetime": "2026-07-12T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 28
+  },
+  {
+    "card_id": 1788036539895,
+    "rating": 2,
+    "review_datetime": "2026-07-13T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 2
+  },
+  {
+    "card_id": 1788036539896,
+    "rating": 3,
+    "review_datetime": "2026-07-13T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 3
+  },
+  {
+    "card_id": 1788036539901,
+    "rating": 4,
+    "review_datetime": "2026-07-13T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 8
+  },
+  {
+    "card_id": 1788036539928,
+    "rating": 3,
+    "review_datetime": "2026-07-13T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 9
+  },
+  {
+    "card_id": 1788036539942,
+    "rating": 3,
+    "review_datetime": "2026-07-13T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 24
+  },
+  {
+    "card_id": 1788036539910,
+    "rating": 3,
+    "review_datetime": "2026-07-14T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 19
+  },
+  {
+    "card_id": 1788036539911,
+    "rating": 3,
+    "review_datetime": "2026-07-14T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 20
+  },
+  {
+    "card_id": 1788036539912,
+    "rating": 1,
+    "review_datetime": "2026-07-14T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 21
+  },
+  {
+    "card_id": 1788036539907,
+    "rating": 1,
+    "review_datetime": "2026-07-15T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 17
+  },
+  {
+    "card_id": 1788036539911,
+    "rating": 2,
+    "review_datetime": "2026-07-15T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 20
+  },
+  {
+    "card_id": 1788036539931,
+    "rating": 3,
+    "review_datetime": "2026-07-15T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 12
+  },
+  {
+    "card_id": 1788036539949,
+    "rating": 4,
+    "review_datetime": "2026-07-15T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 30
+  },
+  {
+    "card_id": 1788036539921,
+    "rating": 1,
+    "review_datetime": "2026-07-16T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 28
+  },
+  {
+    "card_id": 1788036539932,
+    "rating": 1,
+    "review_datetime": "2026-07-16T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 14
+  },
+  {
+    "card_id": 1788036539941,
+    "rating": 3,
+    "review_datetime": "2026-07-16T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 23
+  },
+  {
+    "card_id": 1788036539917,
+    "rating": 2,
+    "review_datetime": "2026-07-17T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 25
+  },
+  {
+    "card_id": 1788036539940,
+    "rating": 3,
+    "review_datetime": "2026-07-17T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 20
+  },
+  {
+    "card_id": 1788036539903,
+    "rating": 4,
+    "review_datetime": "2026-07-18T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 10
+  },
+  {
+    "card_id": 1788036539905,
+    "rating": 3,
+    "review_datetime": "2026-07-18T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 14
+  },
+  {
+    "card_id": 1788036539931,
+    "rating": 3,
+    "review_datetime": "2026-07-18T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 12
+  },
+  {
+    "card_id": 1788036539938,
+    "rating": 3,
+    "review_datetime": "2026-07-18T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 18
+  },
+  {
+    "card_id": 1788036539899,
+    "rating": 4,
+    "review_datetime": "2026-07-19T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 6
+  },
+  {
+    "card_id": 1788036539930,
+    "rating": 1,
+    "review_datetime": "2026-07-19T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 11
+  },
+  {
+    "card_id": 1788036539934,
+    "rating": 2,
+    "review_datetime": "2026-07-19T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 15
+  },
+  {
+    "card_id": 1788036539946,
+    "rating": 3,
+    "review_datetime": "2026-07-19T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 28
+  },
+  {
+    "card_id": 1788036539901,
+    "rating": 3,
+    "review_datetime": "2026-07-20T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 8
+  },
+  {
+    "card_id": 1788036539932,
+    "rating": 1,
+    "review_datetime": "2026-07-20T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 14
+  },
+  {
+    "card_id": 1788036539940,
+    "rating": 3,
+    "review_datetime": "2026-07-20T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 20
+  },
+  {
+    "card_id": 1788036539941,
+    "rating": 4,
+    "review_datetime": "2026-07-20T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 23
+  },
+  {
+    "card_id": 1788036539946,
+    "rating": 3,
+    "review_datetime": "2026-07-20T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 28
+  },
+  {
+    "card_id": 1788036539903,
+    "rating": 3,
+    "review_datetime": "2026-07-21T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 10
+  },
+  {
+    "card_id": 1788036539907,
+    "rating": 4,
+    "review_datetime": "2026-07-21T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 17
+  },
+  {
+    "card_id": 1788036539917,
+    "rating": 3,
+    "review_datetime": "2026-07-21T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 25
+  },
+  {
+    "card_id": 1788036539918,
+    "rating": 2,
+    "review_datetime": "2026-07-21T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 26
+  },
+  {
+    "card_id": 1788036539920,
+    "rating": 1,
+    "review_datetime": "2026-07-21T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 27
+  },
+  {
+    "card_id": 1788036539925,
+    "rating": 1,
+    "review_datetime": "2026-07-21T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 3
+  },
+  {
+    "card_id": 1788036539926,
+    "rating": 3,
+    "review_datetime": "2026-07-21T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 7
+  },
+  {
+    "card_id": 1788036539939,
+    "rating": 2,
+    "review_datetime": "2026-07-21T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 19
+  },
+  {
+    "card_id": 1788036539946,
+    "rating": 4,
+    "review_datetime": "2026-07-21T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 28
+  },
+  {
+    "card_id": 1788036539947,
+    "rating": 4,
+    "review_datetime": "2026-07-21T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 29
+  },
+  {
+    "card_id": 1788036539896,
+    "rating": 3,
+    "review_datetime": "2026-07-22T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 3
+  },
+  {
+    "card_id": 1788036539912,
+    "rating": 1,
+    "review_datetime": "2026-07-22T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 21
+  },
+  {
+    "card_id": 1788036539917,
+    "rating": 1,
+    "review_datetime": "2026-07-22T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 25
+  },
+  {
+    "card_id": 1788036539922,
+    "rating": 1,
+    "review_datetime": "2026-07-22T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 1
+  },
+  {
+    "card_id": 1788036539928,
+    "rating": 1,
+    "review_datetime": "2026-07-22T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 9
+  },
+  {
+    "card_id": 1788036539910,
+    "rating": 3,
+    "review_datetime": "2026-07-23T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 19
+  },
+  {
+    "card_id": 1788036539914,
+    "rating": 3,
+    "review_datetime": "2026-07-23T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 22
+  },
+  {
+    "card_id": 1788036539930,
+    "rating": 2,
+    "review_datetime": "2026-07-23T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 11
+  },
+  {
+    "card_id": 1788036539928,
+    "rating": 4,
+    "review_datetime": "2026-07-24T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 9
+  },
+  {
+    "card_id": 1788036539931,
+    "rating": 3,
+    "review_datetime": "2026-07-24T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 12
+  },
+  {
+    "card_id": 1788036539932,
+    "rating": 1,
+    "review_datetime": "2026-07-24T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 14
+  },
+  {
+    "card_id": 1788036539949,
+    "rating": 1,
+    "review_datetime": "2026-07-24T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 30
+  },
+  {
+    "card_id": 1788036539945,
+    "rating": 4,
+    "review_datetime": "2026-07-25T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 26
+  },
+  {
+    "card_id": 1788036539905,
+    "rating": 3,
+    "review_datetime": "2026-07-26T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 14
+  },
+  {
+    "card_id": 1788036539907,
+    "rating": 2,
+    "review_datetime": "2026-07-26T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 17
+  },
+  {
+    "card_id": 1788036539909,
+    "rating": 3,
+    "review_datetime": "2026-07-26T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 18
+  },
+  {
+    "card_id": 1788036539916,
+    "rating": 2,
+    "review_datetime": "2026-07-26T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 24
+  },
+  {
+    "card_id": 1788036539934,
+    "rating": 2,
+    "review_datetime": "2026-07-26T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 15
+  },
+  {
+    "card_id": 1788036539940,
+    "rating": 1,
+    "review_datetime": "2026-07-26T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 20
+  },
+  {
+    "card_id": 1788036539899,
+    "rating": 3,
+    "review_datetime": "2026-07-27T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 6
+  },
+  {
+    "card_id": 1788036539905,
+    "rating": 3,
+    "review_datetime": "2026-07-27T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 14
+  },
+  {
+    "card_id": 1788036539926,
+    "rating": 2,
+    "review_datetime": "2026-07-27T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 7
+  },
+  {
+    "card_id": 1788036539928,
+    "rating": 3,
+    "review_datetime": "2026-07-27T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 9
+  },
+  {
+    "card_id": 1788036539938,
+    "rating": 1,
+    "review_datetime": "2026-07-27T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 18
+  },
+  {
+    "card_id": 1788036539944,
+    "rating": 3,
+    "review_datetime": "2026-07-27T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 25
+  },
+  {
+    "card_id": 1788036539900,
+    "rating": 4,
+    "review_datetime": "2026-07-28T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 7
+  },
+  {
+    "card_id": 1788036539907,
+    "rating": 1,
+    "review_datetime": "2026-07-28T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 17
+  },
+  {
+    "card_id": 1788036539922,
+    "rating": 1,
+    "review_datetime": "2026-07-28T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 1
+  },
+  {
+    "card_id": 1788036539923,
+    "rating": 2,
+    "review_datetime": "2026-07-28T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 2
+  },
+  {
+    "card_id": 1788036539931,
+    "rating": 1,
+    "review_datetime": "2026-07-28T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 12
+  },
+  {
+    "card_id": 1788036539939,
+    "rating": 3,
+    "review_datetime": "2026-07-28T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 19
+  },
+  {
+    "card_id": 1788036539947,
+    "rating": 3,
+    "review_datetime": "2026-07-28T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 29
+  },
+  {
+    "card_id": 1788036539901,
+    "rating": 3,
+    "review_datetime": "2026-07-29T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 8
+  },
+  {
+    "card_id": 1788036539915,
+    "rating": 2,
+    "review_datetime": "2026-07-29T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 23
+  },
+  {
+    "card_id": 1788036539935,
+    "rating": 1,
+    "review_datetime": "2026-07-29T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 16
+  },
+  {
+    "card_id": 1788036539903,
+    "rating": 3,
+    "review_datetime": "2026-07-30T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 10
+  },
+  {
+    "card_id": 1788036539906,
+    "rating": 4,
+    "review_datetime": "2026-07-30T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 16
+  },
+  {
+    "card_id": 1788036539914,
+    "rating": 1,
+    "review_datetime": "2026-07-30T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 22
+  },
+  {
+    "card_id": 1788036539918,
+    "rating": 2,
+    "review_datetime": "2026-07-30T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 26
+  },
+  {
+    "card_id": 1788036539925,
+    "rating": 2,
+    "review_datetime": "2026-07-30T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 3
+  },
+  {
+    "card_id": 1788036539927,
+    "rating": 2,
+    "review_datetime": "2026-07-30T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 8
+  },
+  {
+    "card_id": 1788036539936,
+    "rating": 3,
+    "review_datetime": "2026-07-30T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 17
+  },
+  {
+    "card_id": 1788036539940,
+    "rating": 3,
+    "review_datetime": "2026-07-30T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 20
+  },
+  {
+    "card_id": 1788036539945,
+    "rating": 4,
+    "review_datetime": "2026-07-30T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 26
+  },
+  {
+    "card_id": 1788036539916,
+    "rating": 2,
+    "review_datetime": "2026-07-31T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 24
+  },
+  {
+    "card_id": 1788036539949,
+    "rating": 3,
+    "review_datetime": "2026-07-31T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 30
+  },
+  {
+    "card_id": 1788036539914,
+    "rating": 2,
+    "review_datetime": "2026-08-01T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 22
+  },
+  {
+    "card_id": 1788036539926,
+    "rating": 3,
+    "review_datetime": "2026-08-01T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 7
+  },
+  {
+    "card_id": 1788036539947,
+    "rating": 3,
+    "review_datetime": "2026-08-01T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 29
+  },
+  {
+    "card_id": 1788036539916,
+    "rating": 2,
+    "review_datetime": "2026-08-02T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 24
+  },
+  {
+    "card_id": 1788036539926,
+    "rating": 1,
+    "review_datetime": "2026-08-02T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 7
+  },
+  {
+    "card_id": 1788036539927,
+    "rating": 3,
+    "review_datetime": "2026-08-02T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 8
+  },
+  {
+    "card_id": 1788036539949,
+    "rating": 4,
+    "review_datetime": "2026-08-02T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 30
+  },
+  {
+    "card_id": 1788036539899,
+    "rating": 2,
+    "review_datetime": "2026-08-03T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 6
+  },
+  {
+    "card_id": 1788036539938,
+    "rating": 3,
+    "review_datetime": "2026-08-03T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 18
+  },
+  {
+    "card_id": 1788036539900,
+    "rating": 3,
+    "review_datetime": "2026-08-04T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 7
+  },
+  {
+    "card_id": 1788036539906,
+    "rating": 4,
+    "review_datetime": "2026-08-04T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 16
+  },
+  {
+    "card_id": 1788036539909,
+    "rating": 2,
+    "review_datetime": "2026-08-04T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 18
+  },
+  {
+    "card_id": 1788036539915,
+    "rating": 3,
+    "review_datetime": "2026-08-04T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 23
+  },
+  {
+    "card_id": 1788036539922,
+    "rating": 1,
+    "review_datetime": "2026-08-04T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 1
+  },
+  {
+    "card_id": 1788036539934,
+    "rating": 1,
+    "review_datetime": "2026-08-04T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 15
+  },
+  {
+    "card_id": 1788036539944,
+    "rating": 4,
+    "review_datetime": "2026-08-04T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 25
+  },
+  {
+    "card_id": 1788036539945,
+    "rating": 4,
+    "review_datetime": "2026-08-04T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 26
+  },
+  {
+    "card_id": 1788036539905,
+    "rating": 3,
+    "review_datetime": "2026-08-05T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 14
+  },
+  {
+    "card_id": 1788036539928,
+    "rating": 1,
+    "review_datetime": "2026-08-05T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 9
+  },
+  {
+    "card_id": 1788036539934,
+    "rating": 1,
+    "review_datetime": "2026-08-05T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 15
+  },
+  {
+    "card_id": 1788036539935,
+    "rating": 2,
+    "review_datetime": "2026-08-05T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 16
+  },
+  {
+    "card_id": 1788036539903,
+    "rating": 4,
+    "review_datetime": "2026-08-06T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 10
+  },
+  {
+    "card_id": 1788036539923,
+    "rating": 1,
+    "review_datetime": "2026-08-06T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 2
+  },
+  {
+    "card_id": 1788036539914,
+    "rating": 2,
+    "review_datetime": "2026-08-07T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 22
+  },
+  {
+    "card_id": 1788036539918,
+    "rating": 1,
+    "review_datetime": "2026-08-07T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 26
+  },
+  {
+    "card_id": 1788036539925,
+    "rating": 1,
+    "review_datetime": "2026-08-08T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 3
+  },
+  {
+    "card_id": 1788036539936,
+    "rating": 3,
+    "review_datetime": "2026-08-08T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 17
+  },
+  {
+    "card_id": 1788036539945,
+    "rating": 3,
+    "review_datetime": "2026-08-08T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 26
+  },
+  {
+    "card_id": 1788036539899,
+    "rating": 3,
+    "review_datetime": "2026-08-09T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 6
+  },
+  {
+    "card_id": 1788036539922,
+    "rating": 2,
+    "review_datetime": "2026-08-09T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 1
+  },
+  {
+    "card_id": 1788036539947,
+    "rating": 1,
+    "review_datetime": "2026-08-09T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 29
+  },
+  {
+    "card_id": 1788036539900,
+    "rating": 3,
+    "review_datetime": "2026-08-10T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 7
+  },
+  {
+    "card_id": 1788036539903,
+    "rating": 4,
+    "review_datetime": "2026-08-10T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 10
+  },
+  {
+    "card_id": 1788036539938,
+    "rating": 3,
+    "review_datetime": "2026-08-10T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 18
+  },
+  {
+    "card_id": 1788036539944,
+    "rating": 4,
+    "review_datetime": "2026-08-10T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 25
+  },
+  {
+    "card_id": 1788036539916,
+    "rating": 1,
+    "review_datetime": "2026-08-11T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 24
+  },
+  {
+    "card_id": 1788036539935,
+    "rating": 3,
+    "review_datetime": "2026-08-11T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 16
+  },
+  {
+    "card_id": 1788036539918,
+    "rating": 1,
+    "review_datetime": "2026-08-12T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 26
+  },
+  {
+    "card_id": 1788036539936,
+    "rating": 2,
+    "review_datetime": "2026-08-12T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 17
+  },
+  {
+    "card_id": 1788036539906,
+    "rating": 4,
+    "review_datetime": "2026-08-13T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 16
+  },
+  {
+    "card_id": 1788036539909,
+    "rating": 4,
+    "review_datetime": "2026-08-13T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 18
+  },
+  {
+    "card_id": 1788036539918,
+    "rating": 2,
+    "review_datetime": "2026-08-13T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 26
+  },
+  {
+    "card_id": 1788036539945,
+    "rating": 3,
+    "review_datetime": "2026-08-13T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 26
+  },
+  {
+    "card_id": 1788036539900,
+    "rating": 4,
+    "review_datetime": "2026-08-15T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 7
+  },
+  {
+    "card_id": 1788036539914,
+    "rating": 3,
+    "review_datetime": "2026-08-15T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 22
+  },
+  {
+    "card_id": 1788036539925,
+    "rating": 1,
+    "review_datetime": "2026-08-17T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 3
+  },
+  {
+    "card_id": 1788036539906,
+    "rating": 4,
+    "review_datetime": "2026-08-18T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 16
+  },
+  {
+    "card_id": 1788036539936,
+    "rating": 3,
+    "review_datetime": "2026-08-18T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 17
+  },
+  {
+    "card_id": 1788036539916,
+    "rating": 3,
+    "review_datetime": "2026-08-20T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 24
+  },
+  {
+    "card_id": 1788036539935,
+    "rating": 1,
+    "review_datetime": "2026-08-20T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 16
+  },
+  {
+    "card_id": 1788036539936,
+    "rating": 3,
+    "review_datetime": "2026-08-20T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 17
+  },
+  {
+    "card_id": 1788036539906,
+    "rating": 2,
+    "review_datetime": "2026-08-22T12:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 16
+  },
+  {
+    "card_id": 1788036539894,
+    "rating": 4,
+    "review_datetime": "2026-08-29T10:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 1
+  },
+  {
+    "card_id": 1788036539899,
+    "rating": 3,
+    "review_datetime": "2026-08-29T10:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 6
+  },
+  {
+    "card_id": 1788036539915,
+    "rating": 2,
+    "review_datetime": "2026-08-29T10:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 23
+  },
+  {
+    "card_id": 1788036539923,
+    "rating": 3,
+    "review_datetime": "2026-08-29T10:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 2
+  },
+  {
+    "card_id": 1788036539935,
+    "rating": 4,
+    "review_datetime": "2026-08-29T10:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 16
+  },
+  {
+    "card_id": 1788036539953,
+    "rating": 2,
+    "review_datetime": "2026-08-29T10:00:00+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_2",
+    "question_id": 21
+  },
+  {
+    "card_id": 1788036539895,
+    "rating": 3,
+    "review_datetime": "2026-08-30T16:57:33.928353+00:00",
+    "review_duration": null,
+    "user_id": "demo_officer_1",
+    "question_id": 2
+  }
+]

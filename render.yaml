@@ -1,0 +1,27 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Deploy: Render dashboard -> New -> Blueprint -> point at this repo.
+# It provisions one web service with a persistent disk mounted at /data so
+# the SQLite user store (data/app.db) and JSON question/card files survive
+# restarts and redeploys. See README.md for the full manual click-through
+# version of these same steps.
+
+services:
+  - type: web
+    name: gamified-learning
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    disk:
+      name: gamified-learning-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ADMIN_BOOTSTRAP_EMAIL
+        sync: false
+      - key: ADMIN_BOOTSTRAP_PASSWORD
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false

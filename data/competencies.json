@@ -1,0 +1,32 @@
+[
+  {
+    "id": "survey_methodology",
+    "name": "Survey Methodology & Sampling Design",
+    "description": "Sample design, sampling frames, estimation procedures used in NSSO/NSO surveys."
+  },
+  {
+    "id": "national_accounts",
+    "name": "National Accounts & GDP Estimation",
+    "description": "Concepts and compilation of GVA, GDP, and the System of National Accounts (SNA)."
+  },
+  {
+    "id": "price_indices",
+    "name": "Price Indices (CPI / WPI / IIP)",
+    "description": "Construction, base-year revision, and interpretation of official price and production indices."
+  },
+  {
+    "id": "data_dissemination",
+    "name": "Data Dissemination & Publication Standards",
+    "description": "Open data standards, metadata, timeliness, and release calendars for official statistics."
+  },
+  {
+    "id": "statistical_software",
+    "name": "Statistical Software & Data Analysis",
+    "description": "Practical data cleaning, tabulation, and analysis using tools such as R, SPSS, and CSPro."
+  },
+  {
+    "id": "data_governance",
+    "name": "Data Protection & Statistical Governance",
+    "description": "Confidentiality, the Collection of Statistics Act, and data governance frameworks for government statisticians."
+  }
+]

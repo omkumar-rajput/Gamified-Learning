@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "gamified-learning",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd /home/getaweblpubt20/Nachiket/Personal/Learning-System-2 && venv/bin/python app.py"],
+      "port": 5000
+    }
+  ]
+}

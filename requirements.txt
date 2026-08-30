@@ -1,0 +1,6 @@
+fsrs
+flask
+flask-cors
+requests
+pdfminer.six
+gunicorn

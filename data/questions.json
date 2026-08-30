@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "front": "What is the primary purpose of a sampling frame in a survey?",
+    "back": "A list or map that identifies all units in the population from which a sample is drawn",
+    "subject": "Survey Methodology & Sampling Design",
+    "chapter": "Sampling Frames",
+    "competency": "survey_methodology",
+    "options": [
+      "A list of all households selected for interview",
+      "A list or map that identifies all units in the population from which a sample is drawn",
+      "A questionnaire template",
+      "A statistical significance test"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 2,
+    "front": "In NSSO-style surveys, what does 'stratification' primarily achieve?",
+    "back": "Reduces sampling variance by grouping the population into more homogeneous strata",
+    "subject": "Survey Methodology & Sampling Design",
+    "chapter": "Stratified Sampling",
+    "competency": "survey_methodology",
+    "options": [
+      "Reduces sampling variance by grouping the population into more homogeneous strata",
+      "Increases the response rate",
+      "Eliminates the need for weighting",
+      "Guarantees zero non-sampling error"
+    ],
+    "correct_index": 0,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 3,
+    "front": "What is a Primary Sampling Unit (PSU) in NSSO's two-stage sample design?",
+    "back": "A village (rural) or urban block (urban) selected at the first stage",
+    "subject": "Survey Methodology & Sampling Design",
+    "chapter": "Multi-stage Design",
+    "competency": "survey_methodology",
+    "options": [
+      "An individual household",
+      "A village (rural) or urban block (urban) selected at the first stage",
+      "A single survey question",
+      "An entire district"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 4,
+    "front": "Non-sampling error most commonly arises from:",
+    "back": "Response and non-response errors during data collection",
+    "subject": "Survey Methodology & Sampling Design",
+    "chapter": "Survey Errors",
+    "competency": "survey_methodology",
+    "options": [
+      "The randomness inherent in sample selection",
+      "The sample size being too small",
+      "Response and non-response errors during data collection",
+      "Using stratified design instead of simple random sampling"
+    ],
+    "correct_index": 2,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 5,
+    "front": "What does 'probability proportional to size' (PPS) sampling ensure?",
+    "back": "Larger units (e.g. villages with bigger population) get proportionally higher selection probability",
+    "subject": "Survey Methodology & Sampling Design",
+    "chapter": "PPS Sampling",
+    "competency": "survey_methodology",
+    "options": [
+      "Every unit has an equal chance regardless of size",
+      "Larger units (e.g. villages with bigger population) get proportionally higher selection probability",
+      "Only the largest unit is ever selected",
+      "Sampling error is eliminated entirely"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 6,
+    "front": "Gross Value Added (GVA) is best defined as:",
+    "back": "The value of output minus the value of intermediate consumption",
+    "subject": "National Accounts & GDP Estimation",
+    "chapter": "GVA Basics",
+    "competency": "national_accounts",
+    "options": [
+      "GDP minus taxes plus subsidies",
+      "The value of output minus the value of intermediate consumption",
+      "Total government expenditure",
+      "Net exports minus imports"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 7,
+    "front": "Under India's System of National Accounts, GDP at market prices equals:",
+    "back": "GVA at basic prices plus product taxes minus product subsidies",
+    "subject": "National Accounts & GDP Estimation",
+    "chapter": "GDP Formula",
+    "competency": "national_accounts",
+    "options": [
+      "GVA at basic prices minus product taxes plus product subsidies",
+      "GVA at basic prices plus product taxes minus product subsidies",
+      "National Income minus depreciation",
+      "Gross National Income plus net factor income from abroad"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 8,
+    "front": "The 'base year' used in national accounts estimates exists mainly to:",
+    "back": "Calculate real (constant-price) growth by removing the effect of price changes",
+    "subject": "National Accounts & GDP Estimation",
+    "chapter": "Base Year",
+    "competency": "national_accounts",
+    "options": [
+      "Fix nominal prices for all future years",
+      "Calculate real (constant-price) growth by removing the effect of price changes",
+      "Set the government's fiscal year",
+      "Determine survey sample size"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 9,
+    "front": "Which of these is NOT one of the three standard approaches to estimating GDP?",
+    "back": "Sampling approach",
+    "subject": "National Accounts & GDP Estimation",
+    "chapter": "Estimation Approaches",
+    "competency": "national_accounts",
+    "options": [
+      "Production approach",
+      "Income approach",
+      "Expenditure approach",
+      "Sampling approach"
+    ],
+    "correct_index": 3,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 10,
+    "front": "Net National Income (NNI) differs from Gross National Income (GNI) by:",
+    "back": "Consumption of Fixed Capital (depreciation)",
+    "subject": "National Accounts & GDP Estimation",
+    "chapter": "National Income",
+    "competency": "national_accounts",
+    "options": [
+      "Import duties",
+      "Consumption of Fixed Capital (depreciation)",
+      "Indirect taxes",
+      "Population growth rate"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 11,
+    "front": "The Consumer Price Index (CPI) primarily measures:",
+    "back": "Changes in the average retail prices consumers pay for a fixed basket of goods and services",
+    "subject": "Price Indices (CPI / WPI / IIP)",
+    "chapter": "CPI Basics",
+    "competency": "price_indices",
+    "options": [
+      "Changes in wholesale prices of goods",
+      "Changes in the average retail prices consumers pay for a fixed basket of goods and services",
+      "Industrial output growth",
+      "Currency exchange rate movements"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 12,
+    "front": "In India, the Wholesale Price Index (WPI) does NOT include prices of:",
+    "back": "Services",
+    "subject": "Price Indices (CPI / WPI / IIP)",
+    "chapter": "WPI Coverage",
+    "competency": "price_indices",
+    "options": [
+      "Manufactured products",
+      "Primary articles",
+      "Services",
+      "Fuel and power"
+    ],
+    "correct_index": 2,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 13,
+    "front": "A 'base year revision' for a price index is done primarily to:",
+    "back": "Reflect updated consumption/production patterns and keep the basket representative",
+    "subject": "Price Indices (CPI / WPI / IIP)",
+    "chapter": "Base Revision",
+    "competency": "price_indices",
+    "options": [
+      "Increase the index value artificially",
+      "Reflect updated consumption/production patterns and keep the basket representative",
+      "Reduce government spending on statistics",
+      "Simplify data collection"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 14,
+    "front": "The Index of Industrial Production (IIP) is classified into which three broad sectors?",
+    "back": "Mining, Manufacturing, Electricity",
+    "subject": "Price Indices (CPI / WPI / IIP)",
+    "chapter": "IIP Sectors",
+    "competency": "price_indices",
+    "options": [
+      "Agriculture, Services, Manufacturing",
+      "Mining, Manufacturing, Electricity",
+      "Import, Export, Domestic",
+      "Rural, Urban, Semi-urban"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 15,
+    "front": "If CPI inflation is measured using the Laspeyres formula, the weights used are typically from:",
+    "back": "A fixed base-year basket",
+    "subject": "Price Indices (CPI / WPI / IIP)",
+    "chapter": "Laspeyres Formula",
+    "competency": "price_indices",
+    "options": [
+      "The current year",
+      "A fixed base-year basket",
+      "A randomly chosen year",
+      "No weights are used"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 16,
+    "front": "What is the main purpose of a 'release calendar' for official statistics?",
+    "back": "To pre-announce the schedule for publishing statistical releases, improving transparency and predictability",
+    "subject": "Data Dissemination & Publication Standards",
+    "chapter": "Release Calendars",
+    "competency": "data_dissemination",
+    "options": [
+      "To restrict data access",
+      "To pre-announce the schedule for publishing statistical releases, improving transparency and predictability",
+      "To determine survey sample size",
+      "To set price indices"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 17,
+    "front": "Metadata accompanying a statistical dataset primarily serves to:",
+    "back": "Describe the data's definitions, methodology, and quality so users can interpret it correctly",
+    "subject": "Data Dissemination & Publication Standards",
+    "chapter": "Metadata",
+    "competency": "data_dissemination",
+    "options": [
+      "Encrypt sensitive data",
+      "Describe the data's definitions, methodology, and quality so users can interpret it correctly",
+      "Replace the need for documentation",
+      "Increase file storage size"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 18,
+    "front": "MoSPI's data dissemination increasingly follows open data principles, meaning data should be:",
+    "back": "Freely accessible, machine-readable, and reusable wherever feasible",
+    "subject": "Data Dissemination & Publication Standards",
+    "chapter": "Open Data",
+    "competency": "data_dissemination",
+    "options": [
+      "Available only to government departments",
+      "Freely accessible, machine-readable, and reusable wherever feasible",
+      "Sold exclusively to private companies",
+      "Published only in PDF format"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 19,
+    "front": "India's adherence to the IMF's Special Data Dissemination Standard (SDDS) primarily concerns:",
+    "back": "Timeliness, coverage, and quality standards for disseminating macroeconomic and financial data",
+    "subject": "Data Dissemination & Publication Standards",
+    "chapter": "SDDS",
+    "competency": "data_dissemination",
+    "options": [
+      "Tax collection methods",
+      "Timeliness, coverage, and quality standards for disseminating macroeconomic and financial data",
+      "Court judgments",
+      "Election results"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 20,
+    "front": "A key challenge in statistical data dissemination is balancing:",
+    "back": "Transparency and accessibility with respondent confidentiality",
+    "subject": "Data Dissemination & Publication Standards",
+    "chapter": "Confidentiality vs Access",
+    "competency": "data_dissemination",
+    "options": [
+      "Import and export values",
+      "Transparency and accessibility with respondent confidentiality",
+      "GDP growth with inflation",
+      "None of these"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 21,
+    "front": "In R, which function is commonly used to read a CSV file into a data frame?",
+    "back": "read.csv()",
+    "subject": "Statistical Software & Data Analysis",
+    "chapter": "R Basics",
+    "competency": "statistical_software",
+    "options": [
+      "read.csv()",
+      "import.csv()",
+      "load.csv()",
+      "open.csv()"
+    ],
+    "correct_index": 0,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 22,
+    "front": "CSPro is primarily used in official statistics for:",
+    "back": "Data entry, editing, and tabulation for censuses and large-scale surveys",
+    "subject": "Statistical Software & Data Analysis",
+    "chapter": "CSPro",
+    "competency": "statistical_software",
+    "options": [
+      "Graphic design",
+      "Data entry, editing, and tabulation for censuses and large-scale surveys",
+      "Video conferencing",
+      "Web hosting"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 23,
+    "front": "In SPSS, 'recoding into different variables' is used to:",
+    "back": "Create a new variable with transformed/regrouped values while keeping the original intact",
+    "subject": "Statistical Software & Data Analysis",
+    "chapter": "SPSS Recoding",
+    "competency": "statistical_software",
+    "options": [
+      "Delete a variable",
+      "Create a new variable with transformed/regrouped values while keeping the original intact",
+      "Merge two datasets",
+      "Run a t-test"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 24,
+    "front": "A common step in data cleaning before analysis is:",
+    "back": "Identifying and handling missing values, duplicates, and outliers",
+    "subject": "Statistical Software & Data Analysis",
+    "chapter": "Data Cleaning",
+    "competency": "statistical_software",
+    "options": [
+      "Skipping missing-value checks",
+      "Identifying and handling missing values, duplicates, and outliers",
+      "Immediately publishing raw data",
+      "Removing all categorical variables"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 25,
+    "front": "In R, the tidyverse package 'dplyr' is primarily used for:",
+    "back": "Data manipulation such as filtering, grouping, and summarizing",
+    "subject": "Statistical Software & Data Analysis",
+    "chapter": "dplyr",
+    "competency": "statistical_software",
+    "options": [
+      "Data visualization only",
+      "Data manipulation such as filtering, grouping, and summarizing",
+      "Machine learning model training",
+      "File compression"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 26,
+    "front": "The Collection of Statistics Act, 2008 in India primarily provides for:",
+    "back": "A legal framework for collection of statistics by central and state agencies, including confidentiality safeguards",
+    "subject": "Data Protection & Statistical Governance",
+    "chapter": "Legal Framework",
+    "competency": "data_governance",
+    "options": [
+      "Taxation of statistical agencies",
+      "A legal framework for collection of statistics by central and state agencies, including confidentiality safeguards",
+      "Copyright of government reports",
+      "Import-export regulation"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 27,
+    "front": "Under standard statistical confidentiality norms, individual survey responses should be:",
+    "back": "Used only in aggregated/anonymized form for public release",
+    "subject": "Data Protection & Statistical Governance",
+    "chapter": "Confidentiality",
+    "competency": "data_governance",
+    "options": [
+      "Published with full respondent names",
+      "Used only in aggregated/anonymized form for public release",
+      "Sold to third parties",
+      "Ignored after collection"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 28,
+    "front": "'Statistical disclosure control' refers to techniques used to:",
+    "back": "Prevent identification of individual respondents in released data/tables",
+    "subject": "Data Protection & Statistical Governance",
+    "chapter": "Disclosure Control",
+    "competency": "data_governance",
+    "options": [
+      "Increase respondent burden",
+      "Prevent identification of individual respondents in released data/tables",
+      "Speed up data collection",
+      "Calculate national income"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 29,
+    "front": "Which principle from the UN Fundamental Principles of Official Statistics relates most directly to public trust and governance?",
+    "back": "Official statistics must be compiled impartially to honor citizens' entitlement to public information",
+    "subject": "Data Protection & Statistical Governance",
+    "chapter": "UN Fundamental Principles",
+    "competency": "data_governance",
+    "options": [
+      "Statistics should serve political parties exclusively",
+      "Official statistics must be compiled impartially to honor citizens' entitlement to public information",
+      "Statistics need not be based on scientific methods",
+      "Confidentiality is optional"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  },
+  {
+    "id": 30,
+    "front": "A data governance framework for a statistical organization typically defines:",
+    "back": "Roles, responsibilities, and standards for data quality, access, and security across its lifecycle",
+    "subject": "Data Protection & Statistical Governance",
+    "chapter": "Governance Frameworks",
+    "competency": "data_governance",
+    "options": [
+      "Only the office furniture layout",
+      "Roles, responsibilities, and standards for data quality, access, and security across its lifecycle",
+      "Marketing budgets",
+      "None of these"
+    ],
+    "correct_index": 1,
+    "explanation": null,
+    "visibility": "shared",
+    "owner_id": null
+  }
+]

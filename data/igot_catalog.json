@@ -1,0 +1,84 @@
+{
+  "survey_methodology": [
+    {
+      "id": "IGOT-STAT-101",
+      "title": "Fundamentals of Sample Survey Design",
+      "provider": "National Statistical Office (NSO)",
+      "duration_hours": 6,
+      "url": "https://igotkarmayogi.gov.in/#/course/survey-design"
+    },
+    {
+      "id": "IGOT-STAT-102",
+      "title": "Sampling Frames & Estimation Procedures in NSSO Surveys",
+      "provider": "iGOT Karmayogi",
+      "duration_hours": 4,
+      "url": "https://igotkarmayogi.gov.in/#/course/sampling-frames"
+    }
+  ],
+  "national_accounts": [
+    {
+      "id": "IGOT-STAT-201",
+      "title": "National Accounts Statistics: Concepts & Compilation",
+      "provider": "Central Statistics Office",
+      "duration_hours": 8,
+      "url": "https://igotkarmayogi.gov.in/#/course/national-accounts"
+    }
+  ],
+  "price_indices": [
+    {
+      "id": "IGOT-STAT-301",
+      "title": "Price Index Construction: CPI, WPI & Base Revision",
+      "provider": "iGOT Karmayogi",
+      "duration_hours": 5,
+      "url": "https://igotkarmayogi.gov.in/#/course/price-indices"
+    },
+    {
+      "id": "IGOT-STAT-302",
+      "title": "Index of Industrial Production (IIP): Methodology",
+      "provider": "National Statistical Office (NSO)",
+      "duration_hours": 3,
+      "url": "https://igotkarmayogi.gov.in/#/course/iip-methodology"
+    }
+  ],
+  "data_dissemination": [
+    {
+      "id": "IGOT-STAT-401",
+      "title": "Open Data & Statistical Dissemination Standards",
+      "provider": "MoSPI",
+      "duration_hours": 3,
+      "url": "https://igotkarmayogi.gov.in/#/course/data-dissemination"
+    }
+  ],
+  "statistical_software": [
+    {
+      "id": "IGOT-STAT-501",
+      "title": "Data Analysis for Official Statistics using R",
+      "provider": "Indian Statistical Institute",
+      "duration_hours": 10,
+      "url": "https://igotkarmayogi.gov.in/#/course/r-for-statistics"
+    },
+    {
+      "id": "IGOT-STAT-502",
+      "title": "CSPro for Census & Large-Scale Survey Data Entry",
+      "provider": "iGOT Karmayogi",
+      "duration_hours": 4,
+      "url": "https://igotkarmayogi.gov.in/#/course/cspro-basics"
+    }
+  ],
+  "data_governance": [
+    {
+      "id": "IGOT-STAT-601",
+      "title": "Data Protection Framework for Government Statisticians",
+      "provider": "MoSPI",
+      "duration_hours": 2,
+      "url": "https://igotkarmayogi.gov.in/#/course/data-protection"
+    },
+    {
+      "id": "IGOT-STAT-602",
+      "title": "The Collection of Statistics Act: Legal Framework",
+      "provider": "iGOT Karmayogi",
+      "duration_hours": 2,
+      "url": "https://igotkarmayogi.gov.in/#/course/collection-of-statistics-act"
+    }
+  ]
+}

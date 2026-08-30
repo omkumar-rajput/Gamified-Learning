@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Learning – Log In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="auth-shell">
+        <div class="auth-panel">
+            <button type="button" class="theme-toggle-btn" id="theme-btn"
+                    style="float:right;" aria-label="Toggle dark mode">🌙</button>
+            <div class="auth-logo">⚡Gamified Learning</div>
+            <div class="auth-tagline">Statistical Capacity-Building Platform · SIH26101</div>
+
+            <div class="auth-error" id="auth-error"></div>
+
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="email" id="email" required autocomplete="email" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input class="form-control" type="password" id="password" required autocomplete="current-password" placeholder="••••••••">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;" id="submit-btn">Log in</button>
+            </form>
+
+            <div class="auth-switch">New here? <a href="signup.html">Create a free account</a></div>
+
+            <div class="demo-accounts">
+                <p>Or try a seeded demo account (password: <code>demo1234</code>)</p>
+                <div class="demo-account-btns">
+                    <button type="button" class="demo-account-btn" data-email="priya@demo.oss.gov.in">
+                        <span>Priya Sharma</span><span class="role-badge role-officer">officer</span>
+                    </button>
+                    <button type="button" class="demo-account-btn" data-email="arjun@demo.oss.gov.in">
+                        <span>Arjun Mehta</span><span class="role-badge role-officer">officer</span>
+                    </button>
+                    <button type="button" class="demo-account-btn" data-email="admin@demo.oss.gov.in">
+                        <span>Training Manager</span><span class="role-badge role-admin">admin</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="common.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Learning – Manage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar" aria-label="Main navigation">
+            <a href="index.html" class="nav-logo" aria-label="Gamified Learning home">⚡Gamified Learning</a>
+            <ul class="nav-links" role="list">
+                <li><a href="index.html" class="nav-link">Dashboard</a></li>
+                <li><a href="quiz.html" class="nav-link">Quiz</a></li>
+                <li><a href="upload.html" class="nav-link">Upload</a></li>
+                <li><a href="edit.html" class="nav-link active" aria-current="page">Manage</a></li>
+                <li><a href="learning-path.html" class="nav-link">Learning Path</a></li>
+                <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+                <li data-role-only="admin"><a href="admin.html" class="nav-link">Admin</a></li>
+            </ul>
+            <div id="user-switcher-slot"></div>
+        </nav>
+    </header>
+
+    <main class="container edit-container">
+        <div class="edit-layout">
+            <div class="card" style="border-radius: 12px; padding: 1.5rem; text-align: left;">
+                <div class="action-bar">
+                    <h3 style="margin: 0;">Questions</h3>
+                    <button class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;" onclick="openNewForm()">+ New</button>
+                </div>
+                <div id="questions-list" class="questions-list">
+                    <div class="loader" style="width:30px; height:30px; border-width:2px; margin-top:2rem;"></div>
+                </div>
+            </div>
+
+            <div class="card edit-panel">
+                <h2 id="form-title" style="margin-bottom: 2rem; color: var(--primary);">Add New Card</h2>
+                <input type="hidden" id="q-id">
+
+                <div class="form-group">
+                    <label>Competency</label>
+                    <select id="q-competency" class="form-control"></select>
+                    <div class="form-hint">The skill domain this question assesses — drives the competency-gap dashboard.</div>
+                </div>
+
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input id="q-subject" class="form-control" list="subject-options" placeholder="e.g. Price Indices" />
+                    <datalist id="subject-options"></datalist>
+                </div>
+
+                <div class="form-group">
+                    <label>Chapter</label>
+                    <input id="q-chapter" class="form-control" list="chapter-options" placeholder="e.g. Base Year Revision" />
+                    <datalist id="chapter-options"></datalist>
+                </div>
+
+                <div class="form-group">
+                    <label>Question (Front)</label>
+                    <textarea id="q-front" class="form-control" rows="3" placeholder="Enter your question here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Answer (Back)</label>
+                    <textarea id="q-back" class="form-control" rows="2" placeholder="Enter the correct answer here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>MCQ Options <span style="font-weight:400; color:var(--text-muted);">(optional — leave blank for a plain flashcard)</span></label>
+                    <div id="options-inputs"></div>
+                    <div class="form-hint">Mark the correct option with the radio button. "Answer (Back)" above will sync to it automatically.</div>
+                </div>
+
+                <button class="btn btn-primary" style="width: 100%;" onclick="saveQuestion()">Save Flashcard</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="toast" class="toast">Saved Successfully!</div>
+    <script src="common.js"></script>
+    <script src="edit.js"></script>
+</body>
+</html>

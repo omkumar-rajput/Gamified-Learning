@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Learning – Shared Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar" aria-label="Main navigation">
+            <a href="login.html" class="nav-logo" aria-label="Gamified Learning home">⚡Gamified Learning</a>
+            <div style="display:flex; align-items:center; gap:0.75rem;">
+                <button type="button" class="theme-toggle-btn" id="theme-btn" aria-label="Toggle dark mode">🌙</button>
+                <a href="signup.html" class="btn btn-primary btn-sm">Sign up free</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="share-banner">
+            <h1 id="share-title">Shared quiz</h1>
+            <p id="share-subtitle">Loading…</p>
+        </div>
+
+        <div id="loading" class="loader" style="margin-top: 2rem;"></div>
+
+        <section class="dynamic-content" id="quiz-container" hidden aria-label="Quiz"></section>
+
+        <div class="admin-note" style="margin-top:2rem; text-align:center;">
+            💡 This is a read-only preview — <a href="signup.html">create a free account</a> to track your own
+            spaced-repetition progress, XP, and competency gaps.
+        </div>
+    </main>
+
+    <script src="common.js"></script>
+    <script src="share.js"></script>
+</body>
+</html>

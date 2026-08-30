@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Learning – Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="chart.umd.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar" aria-label="Main navigation">
+            <a href="index.html" class="nav-logo" aria-label="Gamified Learning home">⚡Gamified Learning</a>
+            <ul class="nav-links" role="list">
+                <li><a href="index.html" class="nav-link active" aria-current="page">Dashboard</a></li>
+                <li><a href="quiz.html" class="nav-link">Quiz</a></li>
+                <li><a href="upload.html" class="nav-link">Upload</a></li>
+                <li><a href="edit.html" class="nav-link">Manage</a></li>
+                <li><a href="learning-path.html" class="nav-link">Learning Path</a></li>
+                <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+                <li data-role-only="admin"><a href="admin.html" class="nav-link">Admin</a></li>
+            </ul>
+            <div id="user-switcher-slot"></div>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 1000px;">
+        <div id="stats-loading" class="loader" style="margin-top:3rem;"></div>
+
+        <div id="dashboard-content" hidden>
+            <div class="stat-grid" id="stat-grid"></div>
+
+            <div class="dashboard-grid">
+                <div class="chart-card">
+                    <h3 style="margin-bottom:1rem;">Competency Proficiency</h3>
+                    <canvas id="competency-radar"></canvas>
+                </div>
+
+                <div class="chart-card">
+                    <div class="section-title" style="margin-top:0;">
+                        <span>Top Competency Gaps</span>
+                        <a href="learning-path.html">View Learning Path →</a>
+                    </div>
+                    <div id="gaps-preview"></div>
+                </div>
+            </div>
+
+            <div class="section-title">Hardest Questions for You</div>
+            <div class="card" style="text-align:left; padding: 1.25rem 1.5rem;">
+                <div id="hard-questions-list"></div>
+            </div>
+
+            <div class="section-title">Activity Heatmap</div>
+            <div class="card" style="text-align:left; padding: 1.25rem 1.5rem;">
+                <div id="heatmap"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="common.js"></script>
+    <script>
+        const API_BASE = '/api';
+        const COMPETENCY_COLORS = {
+            border: 'rgba(37, 99, 235, 1)',
+            fill: 'rgba(37, 99, 235, 0.15)',
+        };
+
+        document.addEventListener('DOMContentLoaded', initDashboard);
+        let lastHeatmapData = null;
+        window.addEventListener('resize', () => {
+            if (lastHeatmapData) renderHeatmap(lastHeatmapData);
+        });
+
+        async function initDashboard() {
+            renderUserSwitcher('user-switcher-slot');
+            try {
+                const [statsRes, compRes] = await Promise.all([
+                    fetch(apiUrl(`${API_BASE}/stats`)),
+                    fetch(apiUrl(`${API_BASE}/competencies`)),
+                ]);
+                if (!statsRes.ok || !compRes.ok) {
+                    throw new Error(`Backend returned an error (stats: ${statsRes.status}, competencies: ${compRes.status})`);
+                }
+                const stats = await statsRes.json();
+                const compData = await compRes.json();
+
+                renderStatGrid(stats);
+                safeRenderRadar(compData.competencies);
+                renderGapsPreview(compData.competencies);
+                renderHardQuestions(stats.hard_questions);
+
+                document.getElementById('stats-loading').hidden = true;
+                document.getElementById('dashboard-content').hidden = false;
+
+                // Render the heatmap last, after the container is visible,
+                // so it can measure the real available width to fill.
+                renderHeatmap(stats.heatmap);
+            } catch (err) {
+                console.error(err);
+                document.getElementById('stats-loading').innerHTML =
+                    `<p style="color:var(--danger)">Failed to load dashboard: ${err.message}</p>`;
+            }
+        }
+
+        // Chart.js is loaded from a local bundle now, but keep this fallback
+        // in case it ever fails to load (e.g. a restrictive preview/CSP).
+        // Important: this must show the FULL competency list, not the same
+        // top-gaps list as the right-hand panel, or the two panels look
+        // like duplicates of each other.
+        function safeRenderRadar(competencies) {
+            try {
+                if (typeof Chart === 'undefined') {
+                    throw new Error('Chart.js failed to load (likely blocked by the browser/preview)');
+                }
+                renderRadar(competencies);
+            } catch (err) {
+                console.warn('Falling back to list view for competency chart:', err);
+                const chartCard = document.getElementById('competency-radar').closest('.chart-card');
+                chartCard.innerHTML = '<h3 style="margin-bottom:1rem;">Competency Proficiency</h3><div id="radar-fallback"></div>';
+                renderFullCompetencyList(competencies, 'radar-fallback');
+            }
+        }
+
+        function renderFullCompetencyList(competencies, containerId) {
+            const container = document.getElementById(containerId);
+            if (!competencies || competencies.length === 0) {
+                container.innerHTML = '<p style="color:var(--text-muted);">No competency data yet.</p>';
+                return;
+            }
+            container.innerHTML = competencies.map(c => {
+                const score = c.score ?? 0;
+                const cls = scoreClass(score);
+                return `
+                    <div class="competency-bar-row">
+                        <div class="competency-bar-header">
+                            <span class="competency-bar-name">${c.name}</span>
+                            <span class="competency-bar-score score-${cls}">${score}%</span>
+                        </div>
+                        <div class="competency-bar-track">
+                            <div class="competency-bar-fill fill-${cls}" style="width:${score}%"></div>
+                        </div>
+                        <div class="competency-meta">${c.questions_seen}/${c.questions_total} questions attempted${c.accuracy !== null ? ` · ${c.accuracy}% accuracy` : ''}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderStatGrid(stats) {
+            const grid = document.getElementById('stat-grid');
+            const cards = [
+                { label: 'Due Now', value: stats.due_count },
+                { label: 'Learning', value: stats.learning_count },
+                { label: 'Total Questions', value: stats.total_count },
+                { label: 'Day Streak', value: stats.streak },
+                { label: 'Competency Gaps', value: stats.gap_count },
+            ];
+            grid.innerHTML = cards.map(c => `
+                <div class="stat-card">
+                    <div class="stat-value">${c.value}</div>
+                    <div class="stat-label">${c.label}</div>
+                </div>
+            `).join('');
+        }
+
+        function scoreClass(score) {
+            if (score >= 70) return 'high';
+            if (score >= 40) return 'mid';
+            return 'low';
+        }
+
+        function renderRadar(competencies) {
+            const ctx = document.getElementById('competency-radar');
+            const labels = competencies.map(c => c.name.split(' & ')[0].split(' (')[0]);
+            const scores = competencies.map(c => c.score ?? 0);
+
+            new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels,
+                    datasets: [{
+                        label: 'Proficiency',
+                        data: scores,
+                        backgroundColor: COMPETENCY_COLORS.fill,
+                        borderColor: COMPETENCY_COLORS.border,
+                        pointBackgroundColor: COMPETENCY_COLORS.border,
+                    }],
+                },
+                options: {
+                    scales: { r: { min: 0, max: 100, ticks: { stepSize: 20, backdropColor: 'transparent' } } },
+                    plugins: { legend: { display: false } },
+                },
+            });
+        }
+
+        function renderGapsPreview(competencies, containerId) {
+            const container = document.getElementById(containerId || 'gaps-preview');
+            const gaps = competencies
+                .filter(c => c.score !== null && c.questions_total > 0)
+                .sort((a, b) => a.score - b.score)
+                .slice(0, 4);
+
+            if (gaps.length === 0) {
+                container.innerHTML = '<p style="color:var(--text-muted);">No data yet — take a quiz to see your competency profile.</p>';
+                return;
+            }
+
+            container.innerHTML = gaps.map(c => {
+                const cls = scoreClass(c.score);
+                return `
+                    <div class="competency-bar-row">
+                        <div class="competency-bar-header">
+                            <span class="competency-bar-name">${c.name}</span>
+                            <span class="competency-bar-score score-${cls}">${c.score}%</span>
+                        </div>
+                        <div class="competency-bar-track">
+                            <div class="competency-bar-fill fill-${cls}" style="width:${c.score}%"></div>
+                        </div>
+                        <div class="competency-meta">${c.questions_seen}/${c.questions_total} questions attempted${c.accuracy !== null ? ` · ${c.accuracy}% accuracy` : ''}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderHardQuestions(hardQuestions) {
+            const container = document.getElementById('hard-questions-list');
+            if (!hardQuestions || hardQuestions.length === 0) {
+                container.innerHTML = '<p style="color:var(--text-muted);">No struggling questions yet — nice work.</p>';
+                return;
+            }
+            container.innerHTML = hardQuestions.map(q => `
+                <div style="padding: 0.75rem 0; border-bottom: 1px solid var(--border);">
+                    <div style="font-weight:500; color:var(--heading-color);">${q.front}</div>
+                    <div class="q-item-meta">${q.subject} · ${q.chapter} · ${q.again_count} Again / ${q.hard_count} Hard of ${q.total_reviews} reviews</div>
+                </div>
+            `).join('');
+        }
+
+        function renderHeatmap(heatmap) {
+            lastHeatmapData = heatmap;
+            const container = document.getElementById('heatmap');
+            const today = new Date();
+
+            // Fill the full width of the card with a fixed-size grid (like
+            // GitHub's contribution graph) rather than shrinking the window
+            // to fit only the days that have data. Most cells will be gray
+            // until there's more review history — that's expected, not a bug.
+            const cellStep = 15; // 12px cell + 3px gap
+            const availableWidth = container.clientWidth || 900;
+            let weeks = Math.floor(availableWidth / cellStep);
+            weeks = Math.max(20, Math.min(weeks, 160));
+
+            const totalDays = weeks * 7;
+            const startDate = new Date(today);
+            startDate.setDate(startDate.getDate() - (totalDays - 1));
+            const leadingBlanks = startDate.getDay(); // 0 (Sun) .. 6 (Sat)
+
+            const cells = [];
+            for (let i = 0; i < leadingBlanks; i++) {
+                cells.push('<div class="heatmap-cell heatmap-blank"></div>');
+            }
+            for (let i = 0; i < totalDays; i++) {
+                const d = new Date(startDate);
+                d.setDate(d.getDate() + i);
+                const key = d.toISOString().slice(0, 10);
+                const count = heatmap[key] || 0;
+                const level = count === 0 ? 0 : count <= 1 ? 1 : count <= 3 ? 2 : count <= 5 ? 3 : 4;
+                cells.push(`<div class="heatmap-cell" data-level="${level}" title="${key}: ${count} review${count === 1 ? '' : 's'}"></div>`);
+            }
+            container.innerHTML = `<div class="heatmap-grid">${cells.join('')}</div>`;
+        }
+    </script>
+</body>
+</html>

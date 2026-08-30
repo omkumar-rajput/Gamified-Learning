@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Learning – Leaderboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar" aria-label="Main navigation">
+            <a href="index.html" class="nav-logo" aria-label="Gamified Learning home">⚡Gamified Learning</a>
+            <ul class="nav-links" role="list">
+                <li><a href="index.html" class="nav-link">Dashboard</a></li>
+                <li><a href="quiz.html" class="nav-link">Quiz</a></li>
+                <li><a href="upload.html" class="nav-link">Upload</a></li>
+                <li><a href="edit.html" class="nav-link">Manage</a></li>
+                <li><a href="learning-path.html" class="nav-link">Learning Path</a></li>
+                <li><a href="leaderboard.html" class="nav-link active" aria-current="page">Leaderboard</a></li>
+                <li data-role-only="admin"><a href="admin.html" class="nav-link">Admin</a></li>
+            </ul>
+            <div id="user-switcher-slot"></div>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 700px;">
+        <div class="upload-header" style="margin-bottom: 1.5rem;">
+            <h1 style="font-size:1.8rem; font-weight:700; color:var(--heading-color); margin-bottom:0.4rem;">Leaderboard</h1>
+            <p style="color:var(--text-muted);">XP earned from reviews — Again is worth less than Easy, so consistent recall beats grinding.</p>
+        </div>
+
+        <div class="chart-card" id="my-xp-card" style="margin-bottom: 1.5rem;"></div>
+
+        <div id="loading" class="loader" style="margin-top: 2rem;"></div>
+        <div id="leaderboard-list" hidden></div>
+    </main>
+
+    <script src="common.js"></script>
+    <script src="leaderboard.js"></script>
+</body>
+</html>

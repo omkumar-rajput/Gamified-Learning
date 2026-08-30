@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Learning – Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="auth-shell">
+        <div class="auth-panel">
+            <button type="button" class="theme-toggle-btn" id="theme-btn"
+                    style="float:right;" aria-label="Toggle dark mode">🌙</button>
+            <div class="auth-logo">⚡Gamified Learning</div>
+            <div class="auth-tagline">Free for students &amp; self-learners — upload material, get an AI-generated quiz instantly.</div>
+
+            <div class="auth-error" id="auth-error"></div>
+
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="name">Full name</label>
+                    <input class="form-control" type="text" id="name" required autocomplete="name" placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="email" id="email" required autocomplete="email" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input class="form-control" type="password" id="password" required minlength="6" autocomplete="new-password" placeholder="At least 6 characters">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;" id="submit-btn">Create account</button>
+            </form>
+
+            <div class="auth-switch">Already have an account? <a href="login.html">Log in</a></div>
+            <div class="auth-switch">Official OSS officer? Ask your training manager for an account.</div>
+        </div>
+    </main>
+
+    <script src="common.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>
