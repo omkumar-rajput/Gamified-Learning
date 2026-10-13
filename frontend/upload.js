@@ -119,12 +119,23 @@ async function submitContent() {
             body: formData
         });
 
-        if (!response.ok) {
-            throw new Error(`Server error: ${response.status}`);
+               // Read the response body, including when the server reports an error.
+        const contentType = response.headers.get('content-type') || '';
+        let data = {};
+
+        if (contentType.includes('application/json')) {
+            data = await response.json();
+        } else {
+            const responseText = await response.text();
+            data = { error: responseText };
         }
 
-        const data = await response.json();
-
+        if (!response.ok) {
+            throw new Error(
+                data.error || data.message ||
+                `Server returned HTTP ${response.status}`
+            );
+        }
         if (data.success) {
             const count = data.generated ?? 0;
             const competencies = [...new Set((data.questions || []).map(q => q.competency).filter(Boolean))];
