@@ -156,9 +156,13 @@ async function submitContent() {
         } else {
             showResult('error', data.error || 'Upload failed. Please try again.');
         }
-    } catch (err) {
-        console.error(err);
-        showResult('error', 'Could not reach the server. Is the backend running?');
+       } catch (err) {
+        console.error('Upload/generation failed:', err);
+
+        showResult(
+            'error',
+            `Upload failed: ${err.message || 'Unknown error. Check the browser console.'}`
+        );
     } finally {
         setLoading(false);
     }
